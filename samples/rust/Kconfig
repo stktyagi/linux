@@ -112,4 +112,14 @@ config SAMPLE_RUST_HOSTPROGS
 
 	  If unsure, say N.
 
+config SAMPLE_RUST_CUSTOM
+	tristate "Custom Rust sample"
+	depends on RUST
+	help
+	  This option builds a custom Rust sample kernel module.
+
+	  To compile this as a module, choose M here:
+	  the module will be called rust_sample_custom.
+
+	  If unsure, say N.
 endif # SAMPLES_RUST
